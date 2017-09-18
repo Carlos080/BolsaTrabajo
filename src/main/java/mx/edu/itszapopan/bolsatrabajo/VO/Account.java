@@ -25,7 +25,7 @@ import javax.persistence.UniqueConstraint;
 public class Account  implements java.io.Serializable {
 
 
-     private Integer idAccount;
+     private Integer id;
      private String email;
      private String password;
      private String phone;
@@ -53,12 +53,12 @@ public class Account  implements java.io.Serializable {
 
     
     @Column(name="idAccount", unique=true, nullable=false)
-    public Integer getIdAccount() {
-        return this.idAccount;
+    public Integer getId() {
+        return this.id;
     }
     
-    public void setIdAccount(Integer idAccount) {
-        this.idAccount = idAccount;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     
